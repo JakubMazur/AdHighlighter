@@ -42,21 +42,11 @@
 				<string>script.js</string>
 			</dict>
 		</array>
-		<key>SFSafariToolbarItem</key>
-		<dict>
-			<key>Action</key>
-			<string>Command</string>
-			<key>Identifier</key>
-			<string>Button</string>
-			<key>Image</key>
-			<string>ToolbarItemIcon.pdf</string>
-			<key>Label</key>
-			<string>Your Button</string>
-		</dict>
 		<key>SFSafariWebsiteAccess</key>
 		<dict>
 			<key>Allowed Domains</key>
 			<array>
+				<string>*.google.de</string>
 				<string>*.google.com</string>
 				<string>*.google.pl</string>
 			</array>
@@ -67,6 +57,6 @@
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2020 Jakub Mazur. All rights reserved.</string>
 	<key>NSHumanReadableDescription</key>
-	<string>This is a Safari Extension. You should tell us what your extension does here.</string>
+	<string>Highlighting Google search results ads in more for humans way</string>
 </dict>
 </plist>

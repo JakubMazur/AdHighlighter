@@ -16,9 +16,9 @@
 		DD2FB580242F6635005B6E6E /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2FB57F242F6635005B6E6E /* SafariExtensionViewController.swift */; };
 		DD2FB583242F6635005B6E6E /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD2FB581242F6635005B6E6E /* SafariExtensionViewController.xib */; };
 		DD2FB586242F6635005B6E6E /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = DD2FB585242F6635005B6E6E /* script.js */; };
-		DD2FB588242F6635005B6E6E /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DD2FB587242F6635005B6E6E /* ToolbarItemIcon.pdf */; };
-		DD2FB58C242F6635005B6E6E /* Marker.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DD2FB578242F6634005B6E6E /* Marker.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DD2FB58C242F6635005B6E6E /* Highlighter.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DD2FB578242F6634005B6E6E /* Highlighter.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DD2FB592242F72C0005B6E6E /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = DD2FB591242F72C0005B6E6E /* style.css */; };
+		DD5D23612433BEA700421FB4 /* tld.html in Resources */ = {isa = PBXBuildFile; fileRef = DD5D23602433BEA700421FB4 /* tld.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				DD2FB58C242F6635005B6E6E /* Marker.appex in Embed App Extensions */,
+				DD2FB58C242F6635005B6E6E /* Highlighter.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,16 +53,16 @@
 		DD2FB56B242F662A005B6E6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD2FB56D242F662A005B6E6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD2FB56E242F662A005B6E6E /* MarkerBundle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MarkerBundle.entitlements; sourceTree = "<group>"; };
-		DD2FB578242F6634005B6E6E /* Marker.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Marker.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD2FB578242F6634005B6E6E /* Highlighter.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Highlighter.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD2FB57A242F6634005B6E6E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		DD2FB57D242F6635005B6E6E /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
 		DD2FB57F242F6635005B6E6E /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
 		DD2FB582242F6635005B6E6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
 		DD2FB584242F6635005B6E6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD2FB585242F6635005B6E6E /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
-		DD2FB587242F6635005B6E6E /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
-		DD2FB589242F6635005B6E6E /* Marker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Marker.entitlements; sourceTree = "<group>"; };
+		DD2FB589242F6635005B6E6E /* Highlighter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Highlighter.entitlements; sourceTree = "<group>"; };
 		DD2FB591242F72C0005B6E6E /* style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
+		DD5D23602433BEA700421FB4 /* tld.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = tld.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,8 +87,9 @@
 		DD2FB558242F6628005B6E6E = {
 			isa = PBXGroup;
 			children = (
+				DD5D23602433BEA700421FB4 /* tld.html */,
 				DD2FB563242F6628005B6E6E /* MarkerBundle */,
-				DD2FB57C242F6635005B6E6E /* Marker */,
+				DD2FB57C242F6635005B6E6E /* Highlighter */,
 				DD2FB579242F6634005B6E6E /* Frameworks */,
 				DD2FB562242F6628005B6E6E /* Products */,
 			);
@@ -98,7 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				DD2FB561242F6628005B6E6E /* MarkerBundle.app */,
-				DD2FB578242F6634005B6E6E /* Marker.appex */,
+				DD2FB578242F6634005B6E6E /* Highlighter.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,7 +125,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DD2FB57C242F6635005B6E6E /* Marker */ = {
+		DD2FB57C242F6635005B6E6E /* Highlighter */ = {
 			isa = PBXGroup;
 			children = (
 				DD2FB57D242F6635005B6E6E /* SafariExtensionHandler.swift */,
@@ -132,11 +133,10 @@
 				DD2FB581242F6635005B6E6E /* SafariExtensionViewController.xib */,
 				DD2FB584242F6635005B6E6E /* Info.plist */,
 				DD2FB585242F6635005B6E6E /* script.js */,
-				DD2FB587242F6635005B6E6E /* ToolbarItemIcon.pdf */,
-				DD2FB589242F6635005B6E6E /* Marker.entitlements */,
+				DD2FB589242F6635005B6E6E /* Highlighter.entitlements */,
 				DD2FB591242F72C0005B6E6E /* style.css */,
 			);
-			path = Marker;
+			path = Highlighter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,9 +161,9 @@
 			productReference = DD2FB561242F6628005B6E6E /* MarkerBundle.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DD2FB577242F6634005B6E6E /* Marker */ = {
+		DD2FB577242F6634005B6E6E /* Highlighter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DD2FB58D242F6635005B6E6E /* Build configuration list for PBXNativeTarget "Marker" */;
+			buildConfigurationList = DD2FB58D242F6635005B6E6E /* Build configuration list for PBXNativeTarget "Highlighter" */;
 			buildPhases = (
 				DD2FB574242F6634005B6E6E /* Sources */,
 				DD2FB575242F6634005B6E6E /* Frameworks */,
@@ -173,9 +173,9 @@
 			);
 			dependencies = (
 			);
-			name = Marker;
+			name = Highlighter;
 			productName = Marker;
-			productReference = DD2FB578242F6634005B6E6E /* Marker.appex */;
+			productReference = DD2FB578242F6634005B6E6E /* Highlighter.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -210,7 +210,7 @@
 			projectRoot = "";
 			targets = (
 				DD2FB560242F6628005B6E6E /* MarkerBundle */,
-				DD2FB577242F6634005B6E6E /* Marker */,
+				DD2FB577242F6634005B6E6E /* Highlighter */,
 			);
 		};
 /* End PBXProject section */
@@ -222,6 +222,7 @@
 			files = (
 				DD2FB569242F662A005B6E6E /* Assets.xcassets in Resources */,
 				DD2FB56C242F662A005B6E6E /* Main.storyboard in Resources */,
+				DD5D23612433BEA700421FB4 /* tld.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,7 +230,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD2FB588242F6635005B6E6E /* ToolbarItemIcon.pdf in Resources */,
 				DD2FB592242F72C0005B6E6E /* style.css in Resources */,
 				DD2FB583242F6635005B6E6E /* SafariExtensionViewController.xib in Resources */,
 				DD2FB586242F6635005B6E6E /* script.js in Resources */,
@@ -262,7 +262,7 @@
 /* Begin PBXTargetDependency section */
 		DD2FB58B242F6635005B6E6E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DD2FB577242F6634005B6E6E /* Marker */;
+			target = DD2FB577242F6634005B6E6E /* Highlighter */;
 			targetProxy = DD2FB58A242F6635005B6E6E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -415,6 +415,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MARKETING_VERSION = 0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = pl.jkmazur.MarkerBundle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -436,6 +437,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MARKETING_VERSION = 0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = pl.jkmazur.MarkerBundle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -445,17 +447,18 @@
 		DD2FB58E242F6635005B6E6E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = Marker/Marker.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Highlighter/Highlighter.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L23VTUF8N2;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = Marker/Info.plist;
+				INFOPLIST_FILE = Highlighter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = pl.jkmazur.MarkerBundle.Marker;
+				MARKETING_VERSION = 0.4;
+				PRODUCT_BUNDLE_IDENTIFIER = pl.jkmazur.MarkerBundle.Highlighter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -465,17 +468,18 @@
 		DD2FB58F242F6635005B6E6E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = Marker/Marker.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Highlighter/Highlighter.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L23VTUF8N2;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = Marker/Info.plist;
+				INFOPLIST_FILE = Highlighter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = pl.jkmazur.MarkerBundle.Marker;
+				MARKETING_VERSION = 0.4;
+				PRODUCT_BUNDLE_IDENTIFIER = pl.jkmazur.MarkerBundle.Highlighter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -503,7 +507,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DD2FB58D242F6635005B6E6E /* Build configuration list for PBXNativeTarget "Marker" */ = {
+		DD2FB58D242F6635005B6E6E /* Build configuration list for PBXNativeTarget "Highlighter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DD2FB58E242F6635005B6E6E /* Debug */,

@@ -16,9 +16,13 @@
 		DD2FB580242F6635005B6E6E /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2FB57F242F6635005B6E6E /* SafariExtensionViewController.swift */; };
 		DD2FB583242F6635005B6E6E /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD2FB581242F6635005B6E6E /* SafariExtensionViewController.xib */; };
 		DD2FB586242F6635005B6E6E /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = DD2FB585242F6635005B6E6E /* script.js */; };
-		DD2FB58C242F6635005B6E6E /* Highlighter.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DD2FB578242F6634005B6E6E /* Highlighter.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DD2FB58C242F6635005B6E6E /* Ad Highlighter.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DD2FB578242F6634005B6E6E /* Ad Highlighter.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DD2FB592242F72C0005B6E6E /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = DD2FB591242F72C0005B6E6E /* style.css */; };
-		DD5D23612433BEA700421FB4 /* tld.html in Resources */ = {isa = PBXBuildFile; fileRef = DD5D23602433BEA700421FB4 /* tld.html */; };
+		DDF23600244DE9F50061F8D8 /* TLDsParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDF235F7244DE9F50061F8D8 /* TLDsParser.framework */; };
+		DDF23605244DE9F50061F8D8 /* TLDsParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF23604244DE9F50061F8D8 /* TLDsParserTests.swift */; };
+		DDF23607244DE9F50061F8D8 /* TLDsParser.h in Headers */ = {isa = PBXBuildFile; fileRef = DDF235F9244DE9F50061F8D8 /* TLDsParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDF2360E244DEA000061F8D8 /* TLDsParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF235F0244DE9AD0061F8D8 /* TLDsParsing.swift */; };
+		DDF2360F244DEA0A0061F8D8 /* tld.html in Resources */ = {isa = PBXBuildFile; fileRef = DD5D23602433BEA700421FB4 /* tld.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,13 @@
 			remoteGlobalIDString = DD2FB577242F6634005B6E6E;
 			remoteInfo = Marker;
 		};
+		DDF23601244DE9F50061F8D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD2FB559242F6628005B6E6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDF235F6244DE9F50061F8D8;
+			remoteInfo = TLDsParser;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,7 +49,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				DD2FB58C242F6635005B6E6E /* Highlighter.appex in Embed App Extensions */,
+				DD2FB58C242F6635005B6E6E /* Ad Highlighter.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,7 +64,7 @@
 		DD2FB56B242F662A005B6E6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD2FB56D242F662A005B6E6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD2FB56E242F662A005B6E6E /* MarkerBundle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MarkerBundle.entitlements; sourceTree = "<group>"; };
-		DD2FB578242F6634005B6E6E /* Highlighter.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Highlighter.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD2FB578242F6634005B6E6E /* Ad Highlighter.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Ad Highlighter.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD2FB57A242F6634005B6E6E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		DD2FB57D242F6635005B6E6E /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
 		DD2FB57F242F6635005B6E6E /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +74,13 @@
 		DD2FB589242F6635005B6E6E /* Highlighter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Highlighter.entitlements; sourceTree = "<group>"; };
 		DD2FB591242F72C0005B6E6E /* style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
 		DD5D23602433BEA700421FB4 /* tld.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = tld.html; sourceTree = "<group>"; };
+		DDF235F0244DE9AD0061F8D8 /* TLDsParsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLDsParsing.swift; sourceTree = "<group>"; };
+		DDF235F7244DE9F50061F8D8 /* TLDsParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TLDsParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDF235F9244DE9F50061F8D8 /* TLDsParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLDsParser.h; sourceTree = "<group>"; };
+		DDF235FA244DE9F50061F8D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDF235FF244DE9F50061F8D8 /* TLDsParserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TLDsParserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDF23604244DE9F50061F8D8 /* TLDsParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLDsParserTests.swift; sourceTree = "<group>"; };
+		DDF23606244DE9F50061F8D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,15 +99,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DDF235F4244DE9F50061F8D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDF235FC244DE9F50061F8D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDF23600244DE9F50061F8D8 /* TLDsParser.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		DD2FB558242F6628005B6E6E = {
 			isa = PBXGroup;
 			children = (
-				DD5D23602433BEA700421FB4 /* tld.html */,
 				DD2FB563242F6628005B6E6E /* MarkerBundle */,
 				DD2FB57C242F6635005B6E6E /* Highlighter */,
+				DDF235F8244DE9F50061F8D8 /* TLDsParser */,
+				DDF23603244DE9F50061F8D8 /* TLDsParserTests */,
 				DD2FB579242F6634005B6E6E /* Frameworks */,
 				DD2FB562242F6628005B6E6E /* Products */,
 			);
@@ -99,7 +133,9 @@
 			isa = PBXGroup;
 			children = (
 				DD2FB561242F6628005B6E6E /* MarkerBundle.app */,
-				DD2FB578242F6634005B6E6E /* Highlighter.appex */,
+				DD2FB578242F6634005B6E6E /* Ad Highlighter.appex */,
+				DDF235F7244DE9F50061F8D8 /* TLDsParser.framework */,
+				DDF235FF244DE9F50061F8D8 /* TLDsParserTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -139,7 +175,38 @@
 			path = Highlighter;
 			sourceTree = "<group>";
 		};
+		DDF235F8244DE9F50061F8D8 /* TLDsParser */ = {
+			isa = PBXGroup;
+			children = (
+				DD5D23602433BEA700421FB4 /* tld.html */,
+				DDF235F0244DE9AD0061F8D8 /* TLDsParsing.swift */,
+				DDF235F9244DE9F50061F8D8 /* TLDsParser.h */,
+				DDF235FA244DE9F50061F8D8 /* Info.plist */,
+			);
+			path = TLDsParser;
+			sourceTree = "<group>";
+		};
+		DDF23603244DE9F50061F8D8 /* TLDsParserTests */ = {
+			isa = PBXGroup;
+			children = (
+				DDF23604244DE9F50061F8D8 /* TLDsParserTests.swift */,
+				DDF23606244DE9F50061F8D8 /* Info.plist */,
+			);
+			path = TLDsParserTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DDF235F2244DE9F50061F8D8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDF23607244DE9F50061F8D8 /* TLDsParser.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		DD2FB560242F6628005B6E6E /* MarkerBundle */ = {
@@ -161,9 +228,9 @@
 			productReference = DD2FB561242F6628005B6E6E /* MarkerBundle.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DD2FB577242F6634005B6E6E /* Highlighter */ = {
+		DD2FB577242F6634005B6E6E /* Ad Highlighter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DD2FB58D242F6635005B6E6E /* Build configuration list for PBXNativeTarget "Highlighter" */;
+			buildConfigurationList = DD2FB58D242F6635005B6E6E /* Build configuration list for PBXNativeTarget "Ad Highlighter" */;
 			buildPhases = (
 				DD2FB574242F6634005B6E6E /* Sources */,
 				DD2FB575242F6634005B6E6E /* Frameworks */,
@@ -173,10 +240,46 @@
 			);
 			dependencies = (
 			);
-			name = Highlighter;
+			name = "Ad Highlighter";
 			productName = Marker;
-			productReference = DD2FB578242F6634005B6E6E /* Highlighter.appex */;
+			productReference = DD2FB578242F6634005B6E6E /* Ad Highlighter.appex */;
 			productType = "com.apple.product-type.app-extension";
+		};
+		DDF235F6244DE9F50061F8D8 /* TLDsParser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDF23608244DE9F50061F8D8 /* Build configuration list for PBXNativeTarget "TLDsParser" */;
+			buildPhases = (
+				DDF235F2244DE9F50061F8D8 /* Headers */,
+				DDF235F3244DE9F50061F8D8 /* Sources */,
+				DDF235F4244DE9F50061F8D8 /* Frameworks */,
+				DDF235F5244DE9F50061F8D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TLDsParser;
+			productName = TLDsParser;
+			productReference = DDF235F7244DE9F50061F8D8 /* TLDsParser.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DDF235FE244DE9F50061F8D8 /* TLDsParserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDF2360B244DE9F50061F8D8 /* Build configuration list for PBXNativeTarget "TLDsParserTests" */;
+			buildPhases = (
+				DDF235FB244DE9F50061F8D8 /* Sources */,
+				DDF235FC244DE9F50061F8D8 /* Frameworks */,
+				DDF235FD244DE9F50061F8D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDF23602244DE9F50061F8D8 /* PBXTargetDependency */,
+			);
+			name = TLDsParserTests;
+			productName = TLDsParserTests;
+			productReference = DDF235FF244DE9F50061F8D8 /* TLDsParserTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -194,6 +297,12 @@
 					DD2FB577242F6634005B6E6E = {
 						CreatedOnToolsVersion = 11.4;
 					};
+					DDF235F6244DE9F50061F8D8 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					DDF235FE244DE9F50061F8D8 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
 				};
 			};
 			buildConfigurationList = DD2FB55C242F6628005B6E6E /* Build configuration list for PBXProject "MarkerBundle" */;
@@ -210,7 +319,9 @@
 			projectRoot = "";
 			targets = (
 				DD2FB560242F6628005B6E6E /* MarkerBundle */,
-				DD2FB577242F6634005B6E6E /* Highlighter */,
+				DD2FB577242F6634005B6E6E /* Ad Highlighter */,
+				DDF235F6244DE9F50061F8D8 /* TLDsParser */,
+				DDF235FE244DE9F50061F8D8 /* TLDsParserTests */,
 			);
 		};
 /* End PBXProject section */
@@ -222,7 +333,6 @@
 			files = (
 				DD2FB569242F662A005B6E6E /* Assets.xcassets in Resources */,
 				DD2FB56C242F662A005B6E6E /* Main.storyboard in Resources */,
-				DD5D23612433BEA700421FB4 /* tld.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +343,21 @@
 				DD2FB592242F72C0005B6E6E /* style.css in Resources */,
 				DD2FB583242F6635005B6E6E /* SafariExtensionViewController.xib in Resources */,
 				DD2FB586242F6635005B6E6E /* script.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDF235F5244DE9F50061F8D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDF2360F244DEA0A0061F8D8 /* tld.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDF235FD244DE9F50061F8D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,13 +382,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DDF235F3244DE9F50061F8D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDF2360E244DEA000061F8D8 /* TLDsParsing.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDF235FB244DE9F50061F8D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDF23605244DE9F50061F8D8 /* TLDsParserTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		DD2FB58B242F6635005B6E6E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DD2FB577242F6634005B6E6E /* Highlighter */;
+			target = DD2FB577242F6634005B6E6E /* Ad Highlighter */;
 			targetProxy = DD2FB58A242F6635005B6E6E /* PBXContainerItemProxy */;
+		};
+		DDF23602244DE9F50061F8D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDF235F6244DE9F50061F8D8 /* TLDsParser */;
+			targetProxy = DDF23601244DE9F50061F8D8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -406,18 +552,20 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MarkerBundle/MarkerBundle.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = L23VTUF8N2;
+				DEVELOPMENT_TEAM = M66FT576JY;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = MarkerBundle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 0.4;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = pl.jkmazur.MarkerBundle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -428,18 +576,20 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MarkerBundle/MarkerBundle.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = L23VTUF8N2;
+				DEVELOPMENT_TEAM = M66FT576JY;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = MarkerBundle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 0.4;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = pl.jkmazur.MarkerBundle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -448,8 +598,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Highlighter/Highlighter.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L23VTUF8N2;
+				DEVELOPMENT_TEAM = M66FT576JY;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = Highlighter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -457,9 +608,10 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MARKETING_VERSION = 0.4;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = pl.jkmazur.MarkerBundle.Highlighter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -469,8 +621,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Highlighter/Highlighter.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L23VTUF8N2;
+				DEVELOPMENT_TEAM = M66FT576JY;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = Highlighter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -478,10 +631,103 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MARKETING_VERSION = 0.4;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = pl.jkmazur.MarkerBundle.Highlighter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		DDF23609244DE9F50061F8D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = M66FT576JY;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TLDsParser/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pl.jkmazur.TLDsParser;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DDF2360A244DE9F50061F8D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = M66FT576JY;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TLDsParser/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pl.jkmazur.TLDsParser;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DDF2360C244DE9F50061F8D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = M66FT576JY;
+				INFOPLIST_FILE = TLDsParserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pl.jkmazur.TLDsParserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DDF2360D244DE9F50061F8D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = M66FT576JY;
+				INFOPLIST_FILE = TLDsParserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pl.jkmazur.TLDsParserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -507,11 +753,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DD2FB58D242F6635005B6E6E /* Build configuration list for PBXNativeTarget "Highlighter" */ = {
+		DD2FB58D242F6635005B6E6E /* Build configuration list for PBXNativeTarget "Ad Highlighter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DD2FB58E242F6635005B6E6E /* Debug */,
 				DD2FB58F242F6635005B6E6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDF23608244DE9F50061F8D8 /* Build configuration list for PBXNativeTarget "TLDsParser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDF23609244DE9F50061F8D8 /* Debug */,
+				DDF2360A244DE9F50061F8D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDF2360B244DE9F50061F8D8 /* Build configuration list for PBXNativeTarget "TLDsParserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDF2360C244DE9F50061F8D8 /* Debug */,
+				DDF2360D244DE9F50061F8D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

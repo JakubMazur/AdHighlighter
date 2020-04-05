@@ -6,7 +6,11 @@
 //  Copyright © 2020 Jakub Mazur. All rights reserved.
 //
 
-//https://ipfs.io/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/List_of_Google_domains.html
+/*
+ Thanks to this list there all Google TLDs - it's downloaded into tld.html and use this useless generated ViewController
+ to printing a result and copy it into plist file.
+ https://ipfs.io/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/List_of_Google_domains.html
+*/
 
 import Cocoa
 
@@ -14,6 +18,10 @@ class ViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.parseTLDs()
+    }
+    
+    func parseTLDs() {
         let url = Bundle.main.url(forResource: "tld", withExtension: "html")
         let content = try! Data(contentsOf: url!)
         let parsed = String(data: content, encoding: .utf8)!

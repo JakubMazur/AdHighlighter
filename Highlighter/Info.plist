@@ -19,7 +19,7 @@
 	<key>CFBundleShortVersionString</key>
 	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>$(MACOSX_DEPLOYMENT_TARGET)</string>
 	<key>NSExtension</key>
@@ -252,8 +252,8 @@
 		</dict>
 	</dict>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2020 Kettu Jakub Mazur. All rights reserved.\nIcon design Karolina Źrebiec (https://karokaro.myportfolio.com)</string>
+	<string>Copyright © 2020 Jakub Mazur. All rights reserved. Icon design Karolina Źrebiec</string>
 	<key>NSHumanReadableDescription</key>
-	<string>Highligher for ads search results making organic searches more readable.</string>
+	<string>Safari extension that helps you distinguish what is an ad &amp; what is search result</string>
 </dict>
 </plist>

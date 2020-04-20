@@ -9,7 +9,7 @@
 import Cocoa
 import SafariServices
 
-class ViewController: NSViewController {
+class ViewController: NSViewController, NSWindowDelegate {
     let extensionId: String = "pl.jkmazur.adHighlighter.safari"
 
     @IBOutlet weak var buttonView: NSView!
@@ -31,6 +31,17 @@ class ViewController: NSViewController {
         self.timer?.fire()
     }
     
+    override func viewDidAppear() {
+        super.viewDidAppear()
+        self.view.window?.delegate = self
+    }
+    
+    
+    func windowShouldClose(_ sender: NSWindow) -> Bool {
+        NSApplication.shared.terminate(self)
+        return true
+    }
+    
     @IBAction func footerButtonClicked(_ sender: NSButton) {
         let url: String
         if sender === jkmazurButton {
@@ -48,7 +59,6 @@ class ViewController: NSViewController {
     override func viewDidLayout() {
         super.viewDidLayout()
         self.view.layer?.backgroundColor = NSColor(hue:0.58, saturation:0.91, brightness:0.09, alpha:1.00).cgColor
-//        self.buttonView.layer?.backgroundColor = NSColor(hue:0.60, saturation:0.76, brightness:0.33, alpha:1.00).cgColor
     }
     
     private func createTitle() -> NSAttributedString {

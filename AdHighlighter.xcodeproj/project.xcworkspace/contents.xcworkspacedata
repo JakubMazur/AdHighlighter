@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:MarkerBundle.xcodeproj">
+      location = "self:/Users/jakubmazur/Developer/MarkerBundle/AdHighlighter.xcodeproj">
    </FileRef>
 </Workspace>

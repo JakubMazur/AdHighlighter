@@ -1,6 +1,6 @@
 //
 //  SafariExtensionViewController.swift
-//  Marker
+//  Ad Highlighter Safari Extension
 //
 //  Created by Jakub Mazur on 3/28/20.
 //  Copyright © 2020 Jakub Mazur. All rights reserved.

@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DD2FB560242F6628005B6E6E"
                BuildableName = "Ad Highlighter.app"
-               BlueprintName = "Ad Highlighter"
+               BlueprintName = "AdHighlighter"
                ReferencedContainer = "container:AdHighlighter.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,7 +46,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DD2FB560242F6628005B6E6E"
             BuildableName = "Ad Highlighter.app"
-            BlueprintName = "Ad Highlighter"
+            BlueprintName = "AdHighlighter"
             ReferencedContainer = "container:AdHighlighter.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -63,7 +63,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DD2FB560242F6628005B6E6E"
             BuildableName = "Ad Highlighter.app"
-            BlueprintName = "Ad Highlighter"
+            BlueprintName = "AdHighlighter"
             ReferencedContainer = "container:AdHighlighter.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

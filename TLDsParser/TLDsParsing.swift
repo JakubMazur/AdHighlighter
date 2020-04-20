@@ -1,6 +1,6 @@
 //
 //  TLDsParsing.swift
-//  MarkerBundle
+//  Ad Highlighter TLDs Parser
 //
 //  Created by Jakub Mazur on 4/20/20.
 //  Copyright © 2020 Jakub Mazur. All rights reserved.
